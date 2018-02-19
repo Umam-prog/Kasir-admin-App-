@@ -196,8 +196,6 @@ include "/admin/function.php";
     </div>
   </div>
 </div>
-<script >
-</script>
 <script src="js/transition.js"></script>
 <script src="js/main.js"></script>
 </body>
