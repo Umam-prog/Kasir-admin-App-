@@ -1,0 +1,768 @@
+body{
+	margin 	: 0;
+	padding : 0;
+	
+}
+
+a{
+	text-decoration : none;
+}
+
+li {
+	list-style :none;
+}
+* {
+	padding : 0 ;
+	margin  : 0;
+}
+ @font-face {
+         font-family: "Font Digital";
+         src: url('../fonts/Thirsty.otf');
+         }
+ 
+.digital {
+         font-family: "Font Digital";
+         }
+.body {
+	background-image: url("../img/bg.jpg");  background-position: center;
+		background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height : 100%;
+}
+.login {
+	border : 2px solid black;
+}
+.col-md-4 , .badan  {
+	margin-top : 15px;
+	position : relative;
+	border : 2px solid #fff	;
+	height : 500px;
+	border-radius : 10px;
+	padding : 0;
+	margin 	:0;
+	float : right;
+	background-color :rgba(230,230,230,0.4);
+
+}
+.col-sm-12 , .badan  {
+	margin-top : 55px;
+	position : relative;
+	border : 2px solid #fff;
+	border-radius : 10px;
+	background-color :rgba(230,230,230,0.4);
+	overflow: hidden;
+}
+
+#badan_super {
+		top :0%;
+		position: relative;
+		-webkit-transition: all .8s ease-in-out; 
+	    -moz-transition: all .8s ease-in-out;
+	    -o-transition: all .8s ease-in-out;
+	    transition: all .8s ease-in-out;
+	    border : 1px solid #fff;
+}
+
+#badan_super:target{
+		top :-100%;
+		position: relative;
+}
+/* mulai disini buat settingan badan 1 */
+#badan1  {
+	margin : 0;
+	padding : 0;
+	position : relative;
+	height : 100%;
+	border-radius : 10px ;
+
+}
+.atas_badan1 {
+height : 60%;
+
+}
+#badan1 h2{
+	margin-top : 10%;
+}
+
+@media (max-width : 500px){
+	.atas_badan1 h2 {
+	margin-top : 20%;
+	}
+}
+.transparent-input{
+       background-color:rgba(0,0,0,0.4) !important;
+       border:none !important;
+ }
+
+ .form-group {
+ 	margin : 10px 10px;
+ }
+
+#badan1, .input {
+ 	margin-top : 20px;
+ }
+
+/* berhenti disini buat settingan badan 1 */
+
+/* ini buat button di login */
+.button-login {
+width : 50%;
+height : 40px;
+
+}
+
+.button-regis {
+width : 50%;
+height : 40px;
+float : right;
+}
+
+.button_basic_login {
+height : 30%;
+padding-top :  120px;
+
+}
+
+.button_basic_register {
+height : 30%;
+padding-top :  116px;
+
+}
+.btn {
+	border-radius : 5px;
+}
+
+/* tutup button di login */
+
+/* mulai disini buat settingan badan 2 */
+#badan2 h2 {
+	margin-top : 2%;
+}
+#badan2 {
+position : relative;
+height : 100%;
+border-radius : 10px;
+margin :0 ;
+
+}
+.atas_badan2 {
+height : 60%;
+
+
+}
+/* berenti disini disini buat settingan badan 2 */
+
+
+/* ini settingan tambahan buat input */
+
+.form-control, .input-md {
+	color: #fff;
+
+}
+
+.form-control::-moz-placeholder {
+  color: #222;
+  opacity: 1;
+}
+.form-control:-ms-input-placeholder {
+  color: #222;
+}
+.form-control::-webkit-input-placeholder {
+  color: #222;
+}
+
+.submit {
+  color: #222;
+  opacity: 1;
+}
+
+.white {
+  color: #fff;
+}
+/* ini settingan tambahan buat input */
+
+
+
+/* -----------------------CSS INDEX--------------------- */
+.button-logout {
+width : 100px;
+height : 40px;
+float :right;
+margin-top : 5px;
+}
+
+
+.notif {
+	border-radius : 50%;
+	background-color: rgba(0,0,0,.5);
+	display: inline-block;
+	width : 30px;
+	height : 30px;
+	bottom : 5px;
+	position: relative;
+	margin-right : 15px;
+	cursor :pointer;	
+}
+
+.scroll {
+	overflow-y :scroll;
+	height : 300px;
+}
+
+
+.status{
+	background-color :#d9534f;
+	display:inline;padding :8px;  
+	border-radius: 5px; 
+	text-decoration:none;
+	cursor:pointer;
+	color :#fff;
+}
+.status:hover {
+	opacity: .6;
+	text-decoration:none;
+	cursor:pointer;
+	color :#fff;
+}
+.success {
+	background-color : #5cb85c;
+	border-radius: 5px;
+	display:inline;
+	padding :8px 14px;
+	text-decoration:none;
+	cursor:pointer;
+	color:#fff;
+}
+.notif:hover {
+	opacity : .5;
+}
+#wrapper {
+	overflow : hidden;
+}
+#sidebar-wrapper {
+	text-align : center;
+	width : 230px;
+	height : 130%;
+	background : #222;
+	float : left;
+	z-index: 9999;
+	position : absolute;
+	margin-left :0px;
+	-webkit-transition: all .8s ease-in-out; 
+	-moz-transition: all .8s ease-in-out;
+	-o-transition: all .8s ease-in-out;
+	transition: all .8s ease-in-out;
+	position: fixed;
+}
+
+#main-content {
+	float:right; 
+	width: 100%;
+	overflow : hidden;
+	padding-left : 230px;
+	-webkit-transition: all .8s ease-in-out; 
+	-moz-transition: all .8s ease-in-out;
+	-o-transition: all .8s ease-in-out;
+	transition: all .8s ease-in-out;
+}
+@media (max-height : 600px ){
+	#sidebar-wrapper {
+	height : 1600px;
+}
+}
+
+
+.berita_utama {
+	padding-left : 40px;
+	background-color : #fff;
+	height : 70%;
+}
+
+.berita_utama h1 {
+	margin-top : 100px;
+	background-color: #F0C43F;
+	padding : 10px 30px;
+	color : #fff;
+	border-radius: 10px;
+	display: inline-block;
+	position: relative;
+}
+
+.kategori{
+	background-color: #38CDF8;
+	padding : 5px 10px;
+	color : #fff;
+	border-radius: 5px;
+	display : inline-block;
+}
+
+.waktu{
+	background-color: #F04A4A;
+	padding : 5px 10px;
+	color : #fff;
+	border-radius: 5px;
+	display : inline-block;
+}
+
+.title {
+	position: absolute;
+		background-color:#535353;
+	padding : 5px 10px;
+	color : #fff;
+	border-radius: 5px;
+	display : inline-block;
+	margin-top: 30px;
+}
+#sidebar-wrapper a {
+	display : block;
+	padding : 10px 0;
+	color : rgba(255,255,255,0.4);
+	/*border-top :2px solid rgba(230,230,230,0.4);*/
+}
+
+#sidebar-wrapper li:last-child a {
+	/*border-bottom :2px solid rgba(230,230,230,0.4);*/
+}
+.sidebar-nav li a:hover {
+	color : #fff;
+	background-color :rgba(255,255,255,0.4);
+	text-decoration: none ;
+	margin-left : 15px;
+	 box-shadow: -7px 0px #fff; 
+	}
+.sidebar-nav {
+	text-align : left;
+	margin-left : 10px;
+	bottom : -4%;
+	position: relative;
+
+}
+
+.img_user {
+	border-radius : 50%;
+	margin-top : 22%;
+	width : 150px;
+	height : 150px;
+}
+
+.user_id h3 {
+	color : #fff;
+}
+
+/*.button-nav {
+	background-color : #222;
+	width : 100px;
+	height : 100px;
+	float : right;
+}*/
+.icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  border-radius: 1px;
+}
+
+.btn-toogle {
+	width : 120%;
+	background-color : #222;
+	position : absolute;
+	border-radius : 0 5px 5px 0;
+}
+
+.kiri {
+	width : 100%;
+	float :left;
+}
+.kanan {
+	width : 20%;
+	float : right;
+	height : 50px;
+}
+
+.kanan a{
+	text-decoration : none;
+}
+
+
+#wrapper.menuDisplayed #sidebar-wrapper {
+	margin-left : -230px;
+	-webkit-transition: all .8s ease-in-out; 
+	-moz-transition: all .8s ease-in-out;
+	-o-transition: all .8s ease-in-out;
+	transition: all .8s ease-in-out;
+}
+
+#wrapper.menuDisplayed #main-content {
+	width : 100%;
+	padding-left : 0px;
+	-webkit-transition: all .8s ease-in-out; 
+	-moz-transition: all .8s ease-in-out;
+	-o-transition: all .8s ease-in-out;
+	transition: all .8s ease-in-out;
+}
+
+
+.kanan img {
+	width : 20px;
+	height : 20px;
+	padding : 0;
+	margin  : 0;
+	cursor : pointer;
+
+}
+.nav-top {
+	width : 100%;
+	height: 50px;
+	background-color : white;
+}
+
+.container-fluid, .main {
+	padding-left : 0;
+	padding-right : 0;
+
+}
+
+.icon {
+	float : right;
+	color : rgba(255,255,255,0.4);
+	width : 50px;
+}
+
+.button-main{
+	height : 200px;
+	margin: 20px;
+	background-color : #fff;
+	border-radius : 15px;
+}
+
+.button-main:hover {
+	 box-shadow: 1px 1px 5px 5px #80dfff; 
+}
+
+/*style="background-image:url(img/regis.png); background-size:cover;"*/
+
+.button-main img {
+	position : relative;
+	width : 100%;
+	height : 100%;
+	cursor : pointer;
+}
+
+.row , .menu {
+	margin-left : 20px;
+}
+
+.welcome{
+	float:right;
+	color : rgba(0,0,0,0.7);
+	margin :15px; 
+}
+@media (max-width:500px){
+	.row , .menu {
+	margin-left : 0px;
+}
+.welcome{
+	float:right;
+	color : rgba(0,0,0,0.7);
+	margin :15px; 
+	visibility:hidden;
+}
+
+}
+
+ul.tab {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* Float the list items side by side */
+ul.tab li {float: left;}
+
+/* Style the links inside the list items */
+ul.tab li a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+    border-radius : 20px 20px 0 0 ;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Change background color of links on hover */
+ul.tab li a:hover {
+    background-color: #ddd;
+    border-radius : 20px 20px 0 0 ;
+}
+
+/* Create an active/current tablink class */
+ul.tab li a:focus, .active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+
+}
+
+.add_employee {
+	width : 80%;
+	overflow :hidden;
+	margin : 0 auto;
+	padding :0;
+	margin-top : 3%;
+}
+
+.input {
+	width 	: 60%;
+	height 	: 40px;
+	border-radius : 5px ;
+	border :0px;
+	margin : 10px;
+	border : 1px solid #D1D1D1;
+	text-align: center;
+}
+
+.input_departement {
+	width 	: 97%;
+	height 	: 40px;
+	border-radius : 5px ;
+	border :1px solid rgba(0,0,0,.2);
+	margin : 10px;
+}
+
+.contentemployee {
+	width :45%;display:inline-block;margin-right : 2%;
+}
+
+@media(max-width:1200px) {
+	.input_employee {
+	width 	: 90%;
+	height 	: 40px;
+	border-radius : 5px ;
+	border :0px;
+	margin : 5px;
+}
+.contentemployee {
+	width :100%;
+}
+}
+
+.input_employee:hover {
+	border-radius : 5px ;
+	border :0px;
+}
+.input::-moz-placeholder {
+  color: #222;
+  opacity: .4;
+  text-align : center;
+}
+.input:-ms-input-placeholder {
+  color: #222;
+  opacity: .4;
+  text-align : center;
+}
+.input::-webkit-input-placeholder {
+  color: #222;
+  opacity: .4;
+  text-align : center;
+}
+
+fieldset.scheduler-border {
+    border: 1px groove #ddd;
+    padding: 10px	10px 10px 10px;
+    margin: 0 0 1.5em 0 !important;
+    -webkit-box-shadow:  0px 0px 0px 0px #000;
+            box-shadow:  0px 0px 0px 0px #000;
+}
+fieldset.schedulers-border {
+    border: 1px groove #ddd transparent;
+    padding: 10px	10px 10px 10px;
+    margin: 0 0 1.5em 0 !important;
+    -webkit-box-shadow:  0px 0px 0px 0px #000;
+            box-shadow:  0px 0px 0px 0px #000;
+}
+legend.scheduler-border {
+    width:inherit; 
+    padding:0 10px; 
+    border-bottom:none;
+}
+
+
+.thead-inverse {
+ background-color : rgba(0,0,0,.8);
+ color: #fff;
+}
+
+.table tr {
+	height : 50px;
+	text-align : center;
+}
+th {
+  text-align: center;
+}
+.table > thead > tr > th {
+  vertical-align: middle;
+}
+.table > tbody > tr > th {
+  vertical-align: middle;
+ border-bottom: 2px solid #fff;
+}
+
+.bg_employee {
+	background-color : white;
+	width 			 : auto;
+	overflow 		 : hidden;
+	margin-top 		 : 30px;	
+	padding-bottom 	 : 60px;
+	margin-left 	 : 20px;
+	margin-right 	 : 20px;
+	border-radius 	 : 5px;
+}
+
+#owl-demo{
+	margin-top :-30px;
+}
+
+#owl-demo .item{	
+
+  background: #ACAAAA;
+  padding: 40px 0px;
+  color: #FFF;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  padding-left : 30px;
+}
+
+.kategori-terbaru{
+	background-color: #88EB98;
+	padding : 5px 10px;
+	color : #fff;
+	border-radius: 5px;
+	display : inline-block;
+	font-size : 10px;
+}
+
+.waktu-terbaru{
+	background-color: #3FA8F1;
+	padding : 5px 10px;
+	color : #fff;
+	border-radius: 5px;
+	display : inline-block;
+	font-size : 10px;
+}
+
+.kategori-terpopuler{
+	background-color: #88EB98;
+	padding : 5px 10px;
+	color : #fff;
+	border-radius: 5px;
+	display : inline-block;
+	font-size : 10px;
+}
+
+.waktu-terpopuler{
+	background-color: #3FA8F1;
+	padding : 5px 10px;
+	color : #fff;
+	border-radius: 5px;
+	display : inline-block;
+	font-size : 10px;
+}
+
+.terbaru {
+	margin-top : 100px;
+	margin-left : 5%;
+	border : 2px solid black;
+	width : 80%;
+	padding-left : 40px;
+	padding-top : 50px;
+}
+
+.item-sub {
+	margin  : 0px;
+}
+
+
+   .row.content {height: 1500px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height: auto;} 
+    }
+
+ .data_img {
+  width  : 170px;
+  height : 150px;
+}
+
+.img-upload {
+  width : 150px;
+  height : 150px;
+  padding : 10px;
+}
+
+/* #comment {
+	margin:20px 0 0 20px;
+	border: 2px solid #848484;
+	border-radius:20px;
+	-moz-border-radius:20px;
+	max-height: 90%;
+	font-weight: bold;
+	color: #606060;
+	padding: 10px;
+	width: 440px;
+	background-color: #dcdcdc;
+}
+#publishcomment {
+	border: 2px solid #848484;
+	box-shadow: 12px 12px 7px #888888;
+	margin: 30px 0 50px 20px;
+	padding: 10px;
+	max-height: 100%;
+	color: #3d3d3d;
+	width: 550px;
+	font-size: 12px;
+	line-height: 15px;
+}
+#publishcomment hr {
+	color: #ccc;
+}
+#publishcomment a {
+	color: #da5700;
+	text-decoration: none;
+	font-weight:normal;
+}
+#publishcomment a:link {
+	font-weight: bold;
+}
+#publishcomment a:hover {
+	text-decoration: underline;
+}*/
