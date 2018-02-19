@@ -8,7 +8,7 @@ include "/admin/function.php";
   <head>
     <meta charset="utf-8">
     <title>Project IMK</title>
-    <link rel="stylesheet" type="text/css" href="css/Bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="css/plyr.css">
     <link rel='stylesheet prefetch' type="text/css" href="css/ionicons.min.css">
